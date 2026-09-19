@@ -1,0 +1,190 @@
+{
+  "company": {
+    "name": "IKAD Engineering",
+    "legalForm": "Privately held company",
+    "founded": "February 2018",
+    "location": "Khartoum, Sudan",
+    "headquarters": "Khartoum Al-Manshiya, Block 25, Building No. 3, Third Floor, Khartoum, Sudan",
+    "website": "www.ikadeng.com",
+    "phones": ["+249-9-12303870", "+249-9-12327997"],
+    "emails": ["m.kaddam@ikadeng.com", "iyadelbasheir@ikadeng.com"],
+    "tagline": "Engineering trust into every structure.",
+    "introduction": "IKAD Engineering was established in February 2018 in Khartoum, Sudan, by a group of highly skilled engineers. Recognized across the building construction and infrastructure sectors, IKAD is a privately held company headquartered in Khartoum Al-Manshiya. Through diverse experience in the construction market, the company has built its knowledge, skills, and human resources to meet international standards of time, quality, and safety management.",
+    "vision": "To be a respectable building contractor delivering beyond expectation, always — providing the premier level of service to our community, supported by solid expertise through innovation, proficiency, and association.",
+    "mission": "IKAD is devoted to procuring projects at competitive pricing, providing safe working conditions, and delivering quality work within reasonable time frames — giving the country the highest level of building construction, fire protection, life safety, and security.",
+    "management": "IKAD is driven by two working directors who together bring more than 10 years of experience in the building industry, covering business development, procurement, project management, and administration. The management team proactively gathers feedback, monitors changes in the business environment, reviews work processes, and communicates policy and key learnings to all staff at regular meetings.",
+    "people": "Our people are central to delivering the right solutions for our clients. A comprehensive, ongoing training program keeps every team member equipped with the technical skill, knowledge, and attitude the business demands."
+  },
+  "strengths": [
+    {
+      "title": "Specialist Fire Protection Expertise",
+      "text": "Over 10 years of combined experience designing, installing, inspecting and maintaining fire protection systems for commercial, residential, industrial and institutional facilities."
+    },
+    {
+      "title": "Experienced Leadership",
+      "text": "Directors with 10+ years in the building industry overseeing business development, procurement, project management and administration."
+    },
+    {
+      "title": "Trusted by Major Institutions",
+      "text": "Delivered completed works for leading banks and corporates across Sudan, including multiple branch roll-outs for Bank of Khartoum and Faisal Islamic Bank."
+    },
+    {
+      "title": "Established Supplier Network",
+      "text": "Working relationships with recognized international brands including NAFFCO (UAE) and GESPASA Fluid Technology (Spain)."
+    },
+    {
+      "title": "Trained, Accountable Workforce",
+      "text": "A structured training program continually upgrades our people's technical and management capability."
+    }
+  ],
+  "services": [
+    {
+      "id": "fire-protection",
+      "name": "Fire Protection & Life Safety Systems",
+      "summary": "Design, installation, inspection and maintenance of complete fire protection systems for commercial, residential, industrial and institutional facilities.",
+      "items": [
+        {
+          "name": "Fire Hydrant Systems",
+          "text": "A large variety of hydrant valves supplied and installed to meet client specifications, with inspection across multiple parameters and timely, cost-effective delivery."
+        },
+        {
+          "name": "Automatic Fire Sprinkler Systems",
+          "text": "Design, installation, inspection, servicing and maintenance of automatic sprinkler systems that react quickly to reduce heat, flame and smoke in a fire event."
+        },
+        {
+          "name": "Water Mist Fire Suppression Systems",
+          "text": "Fine water-spray systems that control, suppress or extinguish fire by cooling flame and surrounding gases, displacing oxygen, and attenuating radiant heat."
+        },
+        {
+          "name": "Foam Extinguishing Systems",
+          "text": "Fixed foam proportioning and discharge equipment protecting high-value, high-hazard sites: fuel and chemical storage tanks and bunds, refineries and petrochemical installations, chemical process plants, loading racks, and airport or helicopter landing areas."
+        },
+        {
+          "name": "Foam Equipment — Bladder Tanks",
+          "text": "Bladder tank proportioning systems that inject foam concentrate into the water supply automatically, across a wide range of flows and pressures, without external power."
+        },
+        {
+          "name": "FM-200 Clean Agent Suppression",
+          "text": "Clean agent suppression for people, sensitive facilities and irreplaceable assets — applied in computer suites, telecom facilities, railway signaling centers, archives and laboratories, air traffic management centers, petrochemical plants, offshore oil and gas installations, pipeline pumping stations, ship machinery spaces, and rail rolling stock."
+        },
+        {
+          "name": "Fire Fighting Pump Sets",
+          "text": "Reliable firefighting pump packages ensuring adequate water supply at required pressure in emergency conditions: FM-approved / UL-listed sets, standard sets, multi-stage outlet (MSMO) sets, and containerized sets."
+        }
+      ]
+    },
+    {
+      "id": "hvac",
+      "name": "HVAC & Air Conditioning",
+      "summary": "Supply and installation of air conditioning and mechanical ventilation systems, working with internationally recognized equipment brands.",
+      "items": []
+    },
+    {
+      "id": "plumbing",
+      "name": "Plumbing & Water Supply Systems",
+      "summary": "Pipework, water supply infrastructure and pump installation for commercial and industrial facilities, including underground pipe laying and water storage tank installation.",
+      "items": []
+    },
+    {
+      "id": "construction",
+      "name": "Building Construction & Civil Works",
+      "summary": "Building construction and civil works delivered alongside our MEP scope, from structural shell through to complete interior fit-out.",
+      "items": []
+    },
+    {
+      "id": "supply",
+      "name": "Supply of Engineering Equipment",
+      "summary": "Sourcing and supply of fire protection, HVAC and plumbing equipment through established relationships with recognized international manufacturers.",
+      "items": []
+    }
+  ],
+  "brands": [
+    "NAFFCO", "GESPASA Fluid Technology", "JM Electric", "Daikin", "LG", "O General", "Midea", "Pedrollo", "Prime Air Conditioning Industries"
+  ],
+  "sectors": [
+    { "name": "Banking & Financial Services", "note": "Multiple completed branch and facility projects for Bank of Khartoum and Faisal Islamic Bank." },
+    { "name": "Food & Beverage Processing", "note": "Fire protection system installation for Green Food Company." },
+    { "name": "Retail", "note": "Engineering services for Al Anfal Hyper Market." },
+    { "name": "Consumer Goods / FMCG", "note": "Client relationship with JTI – Japan Tobacco International." },
+    { "name": "Consultancy & Professional Services", "note": "Partnership with Murtada Maaz Consultancy." }
+  ],
+  "clients": [
+    "Bank of Khartoum",
+    "Faisal Islamic Bank",
+    "Murtada Maaz Consultancy",
+    "Depot & Factory Equipment Co. Ltd",
+    "Green Food Company",
+    "JTI – Japan Tobacco International",
+    "Al Anfal Hyper Market"
+  ],
+  "suppliers": [
+    { "name": "NAFFCO", "origin": "UAE" },
+    { "name": "GESPASA Fluid Technology", "origin": "Spain" },
+    { "name": "JM Electric", "origin": "Sudan" }
+  ],
+  "projects": [
+    {
+      "id": "bok-kosti",
+      "name": "Kosti Branch",
+      "client": "Bank of Khartoum",
+      "location": "Kosti, White Nile State, Sudan",
+      "scope": "Fire protection systems and MEP fit-out for a new bank branch, including hydrant and sprinkler installation and interior works.",
+      "status": "Completed",
+      "image": "assets/img/projects/branch-daytime-single.jpg"
+    },
+    {
+      "id": "bok-cheque-center",
+      "name": "Cheque Center",
+      "client": "Bank of Khartoum",
+      "location": "Khartoum, Sudan",
+      "scope": "MEP fit-out and fire protection systems for a dedicated cheque processing facility.",
+      "status": "Completed",
+      "image": "assets/img/projects/bok-branch-night.jpg"
+    },
+    {
+      "id": "bok-kinana",
+      "name": "Kinana Branch",
+      "client": "Bank of Khartoum",
+      "location": "Kinana, Sudan",
+      "scope": "Fire protection and MEP fit-out for a new branch building.",
+      "status": "Completed",
+      "image": "assets/img/projects/bok-branch-day-interior.jpg"
+    },
+    {
+      "id": "bok-bahri",
+      "name": "Bahri Industrial Area Branch",
+      "client": "Bank of Khartoum",
+      "location": "Bahri, Khartoum, Sudan",
+      "scope": "Fire protection and MEP fit-out for a branch serving the Bahri industrial area.",
+      "status": "Completed",
+      "image": "assets/img/projects/construction-shell.jpg"
+    },
+    {
+      "id": "green-food-fire",
+      "name": "Fire Fighting System Installation",
+      "client": "Green Food Company",
+      "location": "Sudan",
+      "scope": "Design and installation of a fire-fighting system, including underground pipework and water storage.",
+      "status": "Completed",
+      "image": "assets/img/projects/plumbing-works.jpg"
+    },
+    {
+      "id": "faisal-omdurman",
+      "name": "Omdurman Branch",
+      "client": "Faisal Islamic Bank",
+      "location": "Omdurman, Sudan",
+      "scope": "Fire protection systems and MEP fit-out for a new bank branch.",
+      "status": "Completed",
+      "image": "assets/img/projects/faisal-omdurman-branch.jpg"
+    },
+    {
+      "id": "faisal-al-singeity",
+      "name": "Al Singeity Branch",
+      "client": "Faisal Islamic Bank",
+      "location": "Omdurman Al Singeity, Sudan",
+      "scope": "Fire protection systems and MEP fit-out for a new bank branch.",
+      "status": "Completed",
+      "image": "assets/img/projects/plumbing-services-intro.jpg"
+    }
+  ]
+}
