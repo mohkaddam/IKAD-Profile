@@ -128,36 +128,27 @@
       "name": "Kosti Branch",
       "client": "Bank of Khartoum",
       "location": "Kosti, White Nile State, Sudan",
-      "scope": "Fire protection systems and MEP fit-out for a new bank branch, including hydrant and sprinkler installation and interior works.",
+      "scope": "Construction and interior fit-out for a new bank branch, complemented by fire protection systems including hydrant and sprinkler installation.",
       "status": "Completed",
-      "image": "assets/img/projects/branch-daytime-single.jpg"
-    },
-    {
-      "id": "bok-cheque-center",
-      "name": "Cheque Center",
-      "client": "Bank of Khartoum",
-      "location": "Khartoum, Sudan",
-      "scope": "MEP fit-out and fire protection systems for a dedicated cheque processing facility.",
-      "status": "Completed",
-      "image": "assets/img/projects/bok-branch-night.jpg"
+      "image": "assets/img/projects/kosti-branch-exterior.jpg"
     },
     {
       "id": "bok-kinana",
       "name": "Kinana Branch",
       "client": "Bank of Khartoum",
       "location": "Kinana, Sudan",
-      "scope": "Fire protection and MEP fit-out for a new branch building.",
+      "scope": "Construction and fit-out for a new branch building, complemented by fire protection systems.",
       "status": "Completed",
-      "image": "assets/img/projects/bok-branch-day-interior.jpg"
+      "image": "assets/img/projects/kinana-branch-exterior-night.jpg"
     },
     {
       "id": "bok-bahri",
       "name": "Bahri Industrial Area Branch",
       "client": "Bank of Khartoum",
       "location": "Bahri, Khartoum, Sudan",
-      "scope": "Fire protection and MEP fit-out for a branch serving the Bahri industrial area.",
+      "scope": "Construction and fit-out for a branch serving the Bahri industrial area, complemented by fire protection systems.",
       "status": "Completed",
-      "image": "assets/img/projects/construction-shell.jpg"
+      "image": "assets/img/projects/bahri-branch-construction.jpg"
     },
     {
       "id": "green-food-fire",
@@ -166,25 +157,16 @@
       "location": "Sudan",
       "scope": "Design and installation of a fire-fighting system, including underground pipework and water storage.",
       "status": "Completed",
-      "image": "assets/img/projects/plumbing-works.jpg"
-    },
-    {
-      "id": "faisal-omdurman",
-      "name": "Omdurman Branch",
-      "client": "Faisal Islamic Bank",
-      "location": "Omdurman, Sudan",
-      "scope": "Fire protection systems and MEP fit-out for a new bank branch.",
-      "status": "Completed",
-      "image": "assets/img/projects/faisal-omdurman-branch.jpg"
+      "image": "assets/img/projects/green-food-firefighting-pipework.jpg"
     },
     {
       "id": "faisal-al-singeity",
       "name": "Al Singeity Branch",
       "client": "Faisal Islamic Bank",
       "location": "Omdurman Al Singeity, Sudan",
-      "scope": "Fire protection systems and MEP fit-out for a new bank branch.",
+      "scope": "Construction and fit-out for a new bank branch, complemented by fire protection systems.",
       "status": "Completed",
-      "image": "assets/img/projects/plumbing-services-intro.jpg"
+      "image": "assets/img/projects/al-singeity-branch-exterior.jpg"
     }
   ]
 }
