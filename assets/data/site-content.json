@@ -176,6 +176,15 @@
       "scope": "Interior fit-out of a corporate head office, including reception, boardroom and workspace areas.",
       "status": "Completed",
       "image": "assets/img/projects/faisal-corporate-office-reception.jpg"
+    },
+    {
+      "id": "alrawabi-electrical",
+      "name": "Electrical Installation Works",
+      "client": "Alrawabi Factory",
+      "location": "Sudan",
+      "scope": "Electrical installation works including distribution and control panel installation, cabling and standby generator sets.",
+      "status": "Completed",
+      "image": "assets/img/projects/alrawabi-electrical-control-panels.jpg"
     }
   ]
 }
