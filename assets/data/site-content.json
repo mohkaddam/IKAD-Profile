@@ -167,6 +167,15 @@
       "scope": "Construction and fit-out for a new bank branch, complemented by fire protection systems.",
       "status": "Completed",
       "image": "assets/img/projects/al-singeity-branch-exterior.jpg"
+    },
+    {
+      "id": "faisal-corporate-office",
+      "name": "Corporate Office",
+      "client": "Faisal Islamic Bank",
+      "location": "Khartoum, Sudan",
+      "scope": "Interior fit-out of a corporate head office, including reception, boardroom and workspace areas.",
+      "status": "Completed",
+      "image": "assets/img/projects/faisal-corporate-office-reception.jpg"
     }
   ]
 }
