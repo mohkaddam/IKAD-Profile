@@ -62,6 +62,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Gallery lightbox
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    var lightboxImg = lightbox.querySelector('img');
+    var lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    var closeBtn = lightbox.querySelector('.lightbox-close');
+    var openLightbox = function (src, caption) {
+      lightboxImg.src = src;
+      lightboxImg.alt = caption || '';
+      if (lightboxCaption) lightboxCaption.textContent = caption || '';
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+    var closeLightbox = function () {
+      lightbox.classList.remove('open');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    };
+    document.querySelectorAll('.gallery-grid button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var img = btn.querySelector('img');
+        openLightbox(img.getAttribute('src'), img.getAttribute('alt'));
+      });
+    });
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
+
   // Contact form -> mailto fallback (no backend wired up yet)
   var form = document.getElementById('contact-form');
   if (form) {
