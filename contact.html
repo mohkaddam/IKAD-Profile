@@ -85,6 +85,10 @@
         <h2>Send Us a Message</h2>
         <p style="color:var(--ink-soft);">Fill in the form and we'll get back to you as soon as possible.</p>
         <form id="contact-form" novalidate>
+          <div class="form-field" style="position:absolute;left:-9999px;" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-row">
             <div class="form-field">
               <label for="name">Full Name *</label>
@@ -118,7 +122,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
           <p id="form-status" class="form-note" role="status" aria-live="polite"></p>
-          <p class="form-note">This form opens your email application to send your enquiry directly to IKAD Engineering. Prefer to talk now? Call <a href="tel:+249912303870" style="color:var(--orange-500);font-weight:600;">+249-9-12303870</a>.</p>
+          <p class="form-note">Your enquiry is sent directly to our team. Prefer to talk now? Call <a href="tel:+249912303870" style="color:var(--orange-500);font-weight:600;">+249-9-12303870</a>.</p>
         </form>
       </div>
     </div>

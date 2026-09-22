@@ -95,27 +95,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Contact form -> mailto fallback (no backend wired up yet)
+  // Contact form -> submits to send-quote.php, which emails info@ikadeng.com (cc m.kaddam@ikadeng.com)
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var name = form.name.value.trim();
       var email = form.email.value.trim();
-      var phone = form.phone.value.trim();
-      var subject = form.subject.value.trim() || 'Website enquiry';
       var message = form.message.value.trim();
       var status = document.getElementById('form-status');
+      var submitBtn = form.querySelector('button[type="submit"]');
 
       if (!name || !email || !message) {
         if (status) { status.textContent = 'Please fill in your name, email and message.'; status.style.color = '#c23b3b'; }
         return;
       }
 
-      var body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + (phone || '-') + '\n\n' + message;
-      var mailto = 'mailto:m.kaddam@ikadeng.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      window.location.href = mailto;
-      if (status) { status.textContent = 'Opening your email app to send this enquiry to IKAD Engineering…'; status.style.color = '#2f8a4c'; }
+      if (submitBtn) submitBtn.disabled = true;
+      if (status) { status.textContent = 'Sending your enquiry…'; status.style.color = 'var(--ink-soft)'; }
+
+      fetch('send-quote.php', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+        .then(function (result) {
+          if (result.ok && result.data.success) {
+            if (status) { status.textContent = 'Thank you — your enquiry has been sent. We will get back to you shortly.'; status.style.color = '#2f8a4c'; }
+            form.reset();
+          } else {
+            if (status) { status.textContent = result.data.message || 'Something went wrong. Please try again or email us directly.'; status.style.color = '#c23b3b'; }
+          }
+        })
+        .catch(function () {
+          if (status) { status.textContent = 'Something went wrong. Please try again or email us directly at info@ikadeng.com.'; status.style.color = '#c23b3b'; }
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 });
