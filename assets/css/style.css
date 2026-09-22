@@ -62,8 +62,7 @@ section{padding:88px 0;}
 }
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:700;font-size:20px;color:var(--navy-700);}
-.brand img{height:38px;width:auto;}
-.brand .brand-sub{display:block;font-size:10px;letter-spacing:.14em;font-weight:600;color:var(--orange-500);}
+.brand img{height:42px;width:auto;}
 .nav-links{display:flex;gap:32px;list-style:none;align-items:center;}
 .nav-links a{font-weight:600;font-size:14.5px;color:var(--ink-soft);padding:6px 2px;border-bottom:2px solid transparent;transition:all .2s;}
 .nav-links a:hover,.nav-links a.active{color:var(--navy-700);border-color:var(--orange-500);}
@@ -223,8 +222,7 @@ section{padding:88px 0;}
 .footer-grid a{font-size:14.5px;color:#c3c6dc;transition:color .2s;}
 .footer-grid a:hover{color:var(--orange-400);}
 .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.footer-brand img{height:34px;filter:brightness(0) invert(1);}
-.footer-brand span{font-family:var(--font-head);font-weight:700;color:#fff;font-size:18px;}
+.footer-brand img{height:40px;filter:brightness(0) invert(1);}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:#8f93b0;}
 
 /* Sticky mobile call/whatsapp bar */
