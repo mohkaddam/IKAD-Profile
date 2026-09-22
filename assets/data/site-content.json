@@ -185,6 +185,15 @@
       "scope": "Electrical installation works including distribution and control panel installation, cabling and standby generator sets.",
       "status": "Completed",
       "image": "assets/img/projects/alrawabi-electrical-control-panels.jpg"
+    },
+    {
+      "id": "fib-alfaihaa-hq",
+      "name": "FIB - Alfaihaa HQ",
+      "client": "Faisal Islamic Bank",
+      "location": "Khartoum, Sudan",
+      "scope": "Interior fit-out of a headquarters building lobby, including reception, directory hall and corridors.",
+      "status": "Completed",
+      "image": "assets/img/projects/fib-alfaihaa-hq-reception-desk.jpg"
     }
   ]
 }
