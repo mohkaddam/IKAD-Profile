@@ -25,11 +25,46 @@
     <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">About Us</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">Company</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="approach.html">Our Approach</a></li>
+            <li><a href="hse-quality.html">HSE &amp; Quality</a></li>
+            <li><a href="credentials.html">Credentials</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">Services</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle Services submenu"><svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#construction">Construction</a></li>
+            <li><a href="services.html#finishing">Finishing &amp; Fit-Out</a></li>
+            <li><a href="services.html#mep">MEP</a></li>
+            <li><a href="services.html#fire-protection">Fire &amp; Life Safety</a></li>
+            <li><a href="services.html#hvac">HVAC</a></li>
+            <li><a href="services.html#plumbing">Plumbing</a></li>
+            <li><a href="services.html#supply">Equipment Supply</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="projects.html">Projects</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle Projects submenu"><svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown-menu">
+            <li><a href="projects.html#banking">Banking</a></li>
+            <li><a href="projects.html#commercial">Commercial</a></li>
+            <li><a href="projects.html#industrial">Industrial</a></li>
+            <li><a href="projects.html#retail">Retail</a></li>
+            <li><a href="projects.html#fire-protection">Fire Protection</a></li>
+          </ul>
+        </li>
         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="sectors.html">Sectors</a></li>
         <li><a href="clients.html">Clients &amp; Partners</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="company-profile.html">Company Profile</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -51,16 +86,17 @@
 
   <section>
     <div class="container">
-      <div class="filter-bar reveal" role="group" aria-label="Filter projects by client">
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects by sector">
         <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="Bank of Khartoum">Bank of Khartoum</button>
-        <button class="filter-btn" data-filter="Faisal Islamic Bank">Faisal Islamic Bank</button>
-        <button class="filter-btn" data-filter="Green Food Company">Green Food Company</button>
-        <button class="filter-btn" data-filter="Alrawabi Factory">Alrawabi Factory</button>
+        <button class="filter-btn" data-filter="Banking" id="banking">Banking</button>
+        <button class="filter-btn" data-filter="Commercial" id="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="Industrial" id="industrial">Industrial</button>
+        <button class="filter-btn" data-filter="Retail" id="retail">Retail</button>
+        <button class="filter-btn" data-filter="Fire Protection" id="fire-protection">Fire Protection</button>
       </div>
 
       <div class="grid grid-3">
-        <div class="project-card reveal" data-client="Bank of Khartoum">
+        <div class="project-card reveal" data-client="Bank of Khartoum" data-sector="Banking">
           <div class="thumb"><img src="assets/img/projects/kosti-branch-exterior.jpg" alt="Bank of Khartoum Kosti branch completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -70,7 +106,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Bank of Khartoum">
+        <div class="project-card reveal" data-client="Bank of Khartoum" data-sector="Banking">
           <div class="thumb"><img src="assets/img/projects/kinana-branch-container-assembly.jpg" alt="Bank of Khartoum Kinana branch completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -80,7 +116,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Bank of Khartoum">
+        <div class="project-card reveal" data-client="Bank of Khartoum" data-sector="Banking">
           <div class="thumb"><img src="assets/img/projects/bahri-branch-teller-area.jpg" alt="Bank of Khartoum Bahri Industrial Area branch completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -90,7 +126,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Green Food Company">
+        <div class="project-card reveal" data-client="Green Food Company" data-sector="Industrial|Fire Protection">
           <div class="thumb"><img src="assets/img/projects/green-food-firefighting-pipework.jpg" alt="Green Food Company fire fighting system installation" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -100,7 +136,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Faisal Islamic Bank">
+        <div class="project-card reveal" data-client="Faisal Islamic Bank" data-sector="Banking">
           <div class="thumb"><img src="assets/img/projects/fib-omdurman-branch-exterior.jpg" alt="Faisal Islamic Bank Omdurman branch completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -110,7 +146,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Faisal Islamic Bank">
+        <div class="project-card reveal" data-client="Faisal Islamic Bank" data-sector="Commercial">
           <div class="thumb"><img src="assets/img/projects/faisal-corporate-office-reception.jpg" alt="Faisal Islamic Bank corporate office completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -120,7 +156,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Alrawabi Factory">
+        <div class="project-card reveal" data-client="Alrawabi Factory" data-sector="Industrial">
           <div class="thumb"><img src="assets/img/projects/alrawabi-electrical-control-panels.jpg" alt="Alrawabi Factory electrical installation works completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -130,7 +166,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal" data-client="Faisal Islamic Bank">
+        <div class="project-card reveal" data-client="Faisal Islamic Bank" data-sector="Commercial">
           <div class="thumb"><img src="assets/img/projects/fib-alfaihaa-hq-reception-desk.jpg" alt="Faisal Islamic Bank Alfaihaa HQ completed project" loading="lazy"></div>
           <div class="body">
             <span class="status">Completed</span>
@@ -140,6 +176,8 @@
           </div>
         </div>
       </div>
+
+      <p id="filter-empty-note" class="placeholder-note" style="display:none;text-align:center;">No retail projects to show yet. Check back soon, or see our other completed work above.</p>
 
       <p style="text-align:center;margin-top:32px;"><a href="gallery.html" class="btn btn-outline-dark">View Full Photo Gallery</a></p>
     </div>
@@ -167,19 +205,31 @@
         <h4>Company</h4>
         <ul>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="hse-quality.html">HSE &amp; Quality</a></li>
+          <li><a href="credentials.html">Credentials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Work</h4>
+        <ul>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
           <li><a href="clients.html">Clients &amp; Partners</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="company-profile.html">Company Profile</a></li>
         </ul>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#construction">Construction, Finishing &amp; Fit-Out</a></li>
+          <li><a href="services.html#construction">Construction &amp; Fit-Out</a></li>
           <li><a href="services.html#fire-protection">Fire Protection &amp; Life Safety</a></li>
           <li><a href="services.html#hvac">HVAC &amp; Air Conditioning</a></li>
           <li><a href="services.html#plumbing">Plumbing &amp; Water Supply</a></li>
+          <li><a href="services.html#supply">Equipment Supply</a></li>
         </ul>
       </div>
       <div>

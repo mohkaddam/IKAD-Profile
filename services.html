@@ -25,11 +25,46 @@
     <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">About Us</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">Company</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="approach.html">Our Approach</a></li>
+            <li><a href="hse-quality.html">HSE &amp; Quality</a></li>
+            <li><a href="credentials.html">Credentials</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">Services</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle Services submenu"><svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#construction">Construction</a></li>
+            <li><a href="services.html#finishing">Finishing &amp; Fit-Out</a></li>
+            <li><a href="services.html#mep">MEP</a></li>
+            <li><a href="services.html#fire-protection">Fire &amp; Life Safety</a></li>
+            <li><a href="services.html#hvac">HVAC</a></li>
+            <li><a href="services.html#plumbing">Plumbing</a></li>
+            <li><a href="services.html#supply">Equipment Supply</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="projects.html">Projects</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-label="Toggle Projects submenu"><svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="dropdown-menu">
+            <li><a href="projects.html#banking">Banking</a></li>
+            <li><a href="projects.html#commercial">Commercial</a></li>
+            <li><a href="projects.html#industrial">Industrial</a></li>
+            <li><a href="projects.html#retail">Retail</a></li>
+            <li><a href="projects.html#fire-protection">Fire Protection</a></li>
+          </ul>
+        </li>
         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="sectors.html">Sectors</a></li>
         <li><a href="clients.html">Clients &amp; Partners</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="company-profile.html">Company Profile</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -63,7 +98,7 @@
             <h4>Structural &amp; Shell Construction</h4>
             <p>Construction of building shells for new branch and facility projects.</p>
           </div>
-          <div class="sub-service">
+          <div class="sub-service" id="finishing">
             <h4>Finishing Works</h4>
             <p>Complete interior and exterior finishing works, including wall, floor and ceiling finishes, as delivered on our completed branch projects.</p>
           </div>
@@ -72,6 +107,12 @@
             <p>Complete interior fit-out including finishes, teller counters, waiting areas and services integration, as delivered on our bank branch projects.</p>
           </div>
         </div>
+      </div>
+
+      <div class="section-head reveal" id="mep" style="margin-top:40px;">
+        <span class="eyebrow">Complementary Services</span>
+        <h2>MEP &amp; Fire Protection</h2>
+        <p>Fire protection, HVAC and plumbing works delivered in-house alongside our core construction and fit-out projects.</p>
       </div>
 
       <div class="service-block reveal" id="fire-protection">
@@ -201,19 +242,31 @@
         <h4>Company</h4>
         <ul>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="hse-quality.html">HSE &amp; Quality</a></li>
+          <li><a href="credentials.html">Credentials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Work</h4>
+        <ul>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
           <li><a href="clients.html">Clients &amp; Partners</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="company-profile.html">Company Profile</a></li>
         </ul>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#construction">Construction, Finishing &amp; Fit-Out</a></li>
+          <li><a href="services.html#construction">Construction &amp; Fit-Out</a></li>
           <li><a href="services.html#fire-protection">Fire Protection &amp; Life Safety</a></li>
           <li><a href="services.html#hvac">HVAC &amp; Air Conditioning</a></li>
           <li><a href="services.html#plumbing">Plumbing &amp; Water Supply</a></li>
+          <li><a href="services.html#supply">Equipment Supply</a></li>
         </ul>
       </div>
       <div>

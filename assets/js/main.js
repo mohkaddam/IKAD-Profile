@@ -12,6 +12,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Dropdown submenus (About / Services / Projects)
+  document.querySelectorAll('.dropdown-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var li = btn.closest('.has-dropdown');
+      var isOpen = li.classList.contains('open');
+      document.querySelectorAll('.has-dropdown.open').forEach(function (o) {
+        if (o !== li) { o.classList.remove('open'); var t = o.querySelector('.dropdown-toggle'); if (t) t.setAttribute('aria-expanded', 'false'); }
+      });
+      li.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.has-dropdown')) {
+      document.querySelectorAll('.has-dropdown.open').forEach(function (o) {
+        o.classList.remove('open');
+        var t = o.querySelector('.dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
   // Highlight active nav link
   var path = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(function (a) {
@@ -45,21 +69,39 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Project filter (projects page)
+  // Project filter (projects page) - filters by sector, supports multi-tagged cards (pipe-separated)
   var filterBar = document.querySelector('.filter-bar');
   if (filterBar) {
     var cards = document.querySelectorAll('.project-card');
+    var emptyNote = document.getElementById('filter-empty-note');
+    var applyFilter = function (filter, btn) {
+      filterBar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+      if (btn) btn.classList.add('active');
+      var visibleCount = 0;
+      cards.forEach(function (card) {
+        var sectors = (card.getAttribute('data-sector') || '').split('|');
+        var match = filter === 'all' || sectors.indexOf(filter) !== -1;
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+      if (emptyNote) emptyNote.style.display = visibleCount === 0 ? '' : 'none';
+    };
     filterBar.addEventListener('click', function (e) {
       var btn = e.target.closest('.filter-btn');
       if (!btn) return;
-      filterBar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      var filter = btn.getAttribute('data-filter');
-      cards.forEach(function (card) {
-        var match = filter === 'all' || card.getAttribute('data-client') === filter;
-        card.style.display = match ? '' : 'none';
-      });
+      applyFilter(btn.getAttribute('data-filter'), btn);
     });
+    // Auto-select filter from URL hash (e.g. projects.html#banking)
+    var applyFilterFromHash = function () {
+      var hash = location.hash.replace('#', '');
+      if (!hash) return;
+      var hashBtn = document.getElementById(hash);
+      if (hashBtn && hashBtn.classList.contains('filter-btn')) {
+        applyFilter(hashBtn.getAttribute('data-filter'), hashBtn);
+      }
+    };
+    applyFilterFromHash();
+    window.addEventListener('hashchange', applyFilterFromHash);
   }
 
   // Gallery lightbox
